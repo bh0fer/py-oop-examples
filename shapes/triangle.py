@@ -26,12 +26,12 @@ class Triangle(Shape):
         return sqrt(3) / 4 * self.size ** 2
 
 
+if __name__ == '__main__':
+    s1 = Triangle(0) # s1 ist eine Instanz von Square
+    s2 = Triangle(1)
+    s3 = Triangle(10)
 
-s1 = Triangle(0) # s1 ist eine Instanz von Square
-s2 = Triangle(1)
-s3 = Triangle(10)
-
-for s in [s1,s2,s3]:
-    print(s)
-    s.draw()
-    print('------------------------------------')
+    for s in [s1,s2,s3]:
+        print(s)
+        s.draw()
+        print('------------------------------------')

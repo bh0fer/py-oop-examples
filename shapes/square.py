@@ -24,12 +24,13 @@ class Square(Shape):
         return self.size ** 2
 
 
-s1 = Square(0) # s1 ist eine Instanz von Square
-s2 = Square(1)
-s2.name = 'Quadrat Grösse Eins'
-s3 = Square(10)
+if __name__ == '__main__':
+    s1 = Square(0) # s1 ist eine Instanz von Square
+    s2 = Square(1)
+    s2.name = 'Quadrat Grösse Eins'
+    s3 = Square(10)
 
-for s in [s1,s2,s3]:
-    print(s)
-    s.draw()
-    print('------------------------------------')
+    for s in [s1,s2,s3]:
+        print(s)
+        s.draw()
+        print('------------------------------------')
